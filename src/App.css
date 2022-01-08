@@ -1,0 +1,420 @@
+@import url('https://fonts.googleapis.com/css2?family=Russo+One&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+html{
+ 
+    overflow-x: hidden;
+}
+
+.App {
+  text-align: center;
+  background: linear-gradient(to bottom, #000000 0%, #202bb9c5 100%);
+  overflow-x: hidden;
+}
+
+.Navbar{
+  background-color: transparent;
+  color: #fff;
+  font-family: 'Russo One', sans-serif;
+  font-size: 1.5em;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 2%;
+  margin-right: 45%;
+  position: relative;
+  z-index: 50;
+}
+.Navbar > .NavLink{
+  color: #fff;
+  text-decoration: none;
+  padding-left: 5%;
+  padding-right: 5%;
+  margin: 1%;
+  transition: 0.3s;
+}
+
+.NavLink:hover{
+  color: #000000;
+  /* add text shadow gradient */
+  text-shadow: 0 0 2px rgb(228, 11, 181), 0 0 4px rgb(220, 1, 240), 0 0 6px rgb(233, 9, 195), 0 0 8px rgb(23, 68, 192), 0 0 10px rgb(8, 134, 238), 0 0 12px rgb(5, 105, 255), 0 0 14px rgb(5, 93, 255);
+
+}
+
+
+.MintCounter{
+  background-color: rgba(82, 82, 82, 0.438);
+  font-size: 0.75em;
+  font-weight: bold;
+  color: #fff;
+  text-align: left;
+  font-family: "Space Mono";
+  position: absolute;
+  font-weight: 100;
+  top: 0;
+  right: 5vw;
+  padding-left: 1vw;
+  padding-right: 1vw;
+  border-right: #0f0f0f solid 2px;
+  border-bottom: #0f0f0f solid 2px;
+  border-left: #0f0f0f solid 2px;
+  border-radius: 0 0 25% 25%;
+  
+}
+.MintCounter > h2{
+  font-size: 1.25em;
+  color: #fff;
+  text-align: center;
+}
+.MintCounter > p{
+  font-size: 0.75em;
+  color: #fff;
+  text-align: center;
+  font-family: "Space Mono";
+}
+
+.DAppConnection{
+  z-index: 50;
+  background-color: rgba(8, 157, 194, 0.925);
+  font-size: 0.75em;
+  font-weight: bold;
+  color: #fff;
+  text-align: center;
+  font-family: "Space Mono";
+  position: fixed;
+  font-weight: 100;
+  top: 0;
+  left: 0.5vw;
+  padding-left: 0.25vw;
+  padding-right: 0.25vw;
+  border-right: #000000 solid 2px;
+  border-bottom: #000000 solid 2px;
+  border-left: #000000 solid 2px;
+  border-radius: 0 0 5% 5%;
+  animation: slideIn 2s ease-in-out;
+  transition: 0.3s ease-in-out;
+  transform: translateY(-50%);
+
+}
+.DAppConnection > h2{
+  font-size: 1.25em;
+  text-align: center;
+  color: #ffffff;
+}
+.DAppConnection > img{
+  width: 2vw;
+  height: 2vw;
+  border-radius: 50%;
+}
+
+.DAppConnection > button{
+  font-size: 1.5em;
+  color: rgb(255, 145, 0);
+  text-align: center;
+  font-weight: bold;
+  font-family: "Space Mono";
+  background-color: rgba(11, 106, 129, 0.925);
+  border: none;
+  border-radius: 5%;
+  padding: 0.5vw 2vw 0.5vw 2vw;; 
+  cursor: pointer;
+  margin: 0.5vw;
+}
+
+.DAppConnection:hover{
+  background-color: rgba(11, 106, 129, 0.925);
+  transform: translateY(0);
+}
+
+@keyframes slideIn {
+  0% {
+    transform: translateY(-100%);
+  }
+  90% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-50%);
+  }
+}
+  
+.Splash{
+  height: 95vh;
+  width: 100%;
+  color: #fff;
+  padding: 20px;
+  font-size: 1.5em;
+  font-family: 'Roboto', sans-serif;
+  text-align: center;
+  /* background gradient */
+  display: flex;
+}
+
+
+ 
+.Title{
+  font-size: 4em;
+  color: #fff;
+  text-align: center;
+  width: 55vw;
+  /* align left */
+  padding-top: 10%;
+  flex: 40%;
+}
+.Title > h1{
+  /* Gradient Text */
+  background: linear-gradient(to right, #e100ff 0%, #1d04ff 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: bold;
+  font-family: "Space Mono";
+  font-size: 6vw;
+  margin: 0;
+
+}
+
+@keyframes CycleTextShadow {
+
+  
+}
+
+
+
+.Description{
+  font-size: 1vw;
+  font-weight: bold;
+  color: #fff;
+  text-align: center;
+  padding-left: 5%;
+  padding-right: 5%;
+  background: none;
+  -webkit-background-clip: unset;
+  -webkit-text-fill-color: rgb(168, 168, 168);
+  /* align left */
+  font-family: "Space Mono";
+}
+
+.Title > Button{
+  font-size: 0.2em;
+  color: #fff;
+  text-align: center;
+  font-weight: bold;
+  font-family: "Space Mono";
+  background: none;
+  width: 20%;
+  -webkit-background-clip: unset;
+  -webkit-text-fill-color: rgb(168, 168, 168);
+}
+.Title > #mintBtn{
+  margin-right: 5%;
+}
+
+
+
+
+.planet_preview{
+  width: 45%;
+  height: 93vh;
+
+}
+.planet{
+  width: 40%;
+  height: 85%;
+  /* center it */
+  margin: auto;
+  margin-top: 8%;  
+  margin-right: 45%;
+
+  box-shadow: 0 0 10px #fff;
+  background-image: url('./images/Doldia.gif');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  transition: 3s ease-in-out;
+  animation: changeImage 15s ease-in-out infinite;
+}
+
+@keyframes changeImage {
+  0% {
+    background-image: url('./images/Doldia.gif');
+  }
+  25% {
+    background-image: url('./images/Galacaerty.gif');
+  }
+  50% {
+    background-image: url('./images/Rizrind.gif');
+  }
+  75% {
+    background-image: url('./images/Roluria.gif');
+  }
+  100% {
+    background-image: url('./images/Doldia.gif');
+  }
+  
+}
+
+
+.Info{
+  height: 80vh;
+  margin-top: 5%;
+  margin-bottom: 10%;
+  color: #fff;
+  font-size: 1.25em;
+  font-family: "Space Mono";
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr ;
+}
+.InfoPanel{
+  background-color: rgba(0, 0, 0, 0.925);
+  margin: 1.5vw;
+  color: #fff;
+  text-align: center;
+  font-family: "Space Mono";
+  padding-left: 0.25vw;
+  padding-right: 0.25vw;
+  border-radius: 1%;
+  /* Box Shadow */
+  box-shadow: 0 0 10px rgb(31, 31, 31);
+  transition: 0.3s;
+}
+
+.InfoPanel:hover{
+  box-shadow: 0 0 10px rgb(31, 31, 31);
+  transform: scale(1.05);
+}
+
+
+.InfoPanel > h2{
+  font-size: 1.25em;
+  color: rgb(235, 235, 235);
+  text-align: center;
+  font-family: "Space Mono";
+  margin: 0;
+}
+.InfoPanel > img{
+  width: 65%;
+  height: auto;
+  border-bottom: #fff solid 2px;
+  border-radius: 2%;
+  padding: 5% 0% 0 0;
+
+
+}
+
+.InfoPanel > p{
+  font-size: 0.75em;
+  color: rgb(197, 197, 197);
+  text-align: center;
+  font-family: "Space Mono";
+  margin: 0;
+  padding: 2%;
+}
+
+.Mint{
+  height: 18vw;
+  width: 60vw;
+  font-size: 1.25em;
+  font-family: "Space Mono";
+  background-color: rgba(0, 0, 0, 0.925);
+  margin-left: 2%;
+  margin-right: 2%;
+  margin-bottom: 5%;
+  border-radius: 1vw;
+  padding: 2%;
+  /* Center it */
+  margin: auto;
+
+  /* Box Shadow */
+  box-shadow: -2px -2px 6px 2px darkorchid, 2px 2px 6px 2px pink;
+  transition: 0.3s;
+  animation: rotateShadow 2.5s ease-in-out infinite;
+}
+
+.MintForm > h1{
+  font-size: 3.5em;
+  color: rgb(235, 235, 235);
+  text-align: center;
+  font-family: "Space Mono";
+  margin: 0;
+  padding-left: 2%;
+  padding-top: 2%;
+  padding-right: 2%;
+  float: left;
+  vertical-align: text-bottom;
+}
+.mintCount{
+  font-size: 1.25em;
+  color: rgb(197, 197, 197);
+  text-align: left;
+  font-family: "Space Mono";
+  margin-left: 14%;
+  float: left;
+  width: 88%;
+  margin-top: -2%;
+}
+
+.mintImage{
+  width: 18vw;
+  height: 18vw;
+  background-image: url('https://cdn-icons-png.flaticon.com/512/6542/6542433.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  float:right;
+
+}
+
+
+.gas-disclaimer{
+  font-size: 0.45vw;
+  color: #fff;
+  text-align: center;
+  font-family: "Space Mono";
+  font-weight: 100;
+  margin-top: -2vw;
+  width: 30vw;
+
+  
+}
+@keyframes rotateShadow{
+  0% {
+    box-shadow: -2px -2px 6px 2px darkorchid, 2px 2px 6px 2px pink;
+  }
+  50% {
+    box-shadow: -2px -2px 6px 2px pink, 2px 2px 6px 2px darkorchid;
+  }
+  100% {
+    box-shadow: -2px -2px 6px 2px darkorchid, 2px 2px 6px 2px pink;
+  }
+}
+.snackBtn{
+  font-size: 1.25em;
+  background-color: #BB6EF3;
+  text-align: center;
+  font-family: "Space Mono";
+  padding: 2%;
+  float: left;
+  border-radius: 5%;
+  width: 15vw;
+  margin-left: 12%;
+}
+
+.snackBtn:hover{
+  background-color: #BB6EF3;
+  transform: scale(1.05);
+  color: #000000;
+  border-color: #000000;
+}
+
+.Footer{
+  height: 10vh;
+  background-color: #000000;
+  color: #fff;
+  font-size: 1.25em;
+  font-family: "Space Mono";
+  text-align: center;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  margin-top: 5%;
+  width: 100%;
+
+
+}
